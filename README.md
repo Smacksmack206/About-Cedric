@@ -31,7 +31,7 @@ Used resource to remind myself required properties to create a border
 
 ### Reflections and Comments
 
-**Could take this further by continuing to style the webpage through CSS**
-**Could add additional pages**
-**Could create nav and link additional pages**
-**Could add an iframe for one of my favorite youtube videos**
+- **Could take this further by continuing to style the webpage through CSS**
+- **Could add additional pages**
+- **Could create nav and link additional pages**
+- **Could add an iframe for one of my favorite youtube videos**
