@@ -63,6 +63,21 @@ function question4() {
     }
 }
 function question5() {
+    let answer = 'yes'
+    do{
+        answer = prompt("Is Cedric, a hard worker?");
+
+        if (answer.toLowerCase() == 'no' || answer.toLowerCase() == 'n'){
+            alert('Wrong answer - Try again!');
+            // console.log("You answered wrong!") //
+        }
+    } while(answer.toLowerCase() != 'yes' && answer.toLowerCase() != 'y'){
+        alert('That is correct!');
+       // console.log("You answered correctly!") //
+       question6();
+    }
+}
+function question6() {
        let userName = prompt('What is your name?');
        alert('You passed the initial quiz on Cedric - Congrats ' + userName + ' welcome to the site!');
        alert('This is your final message ' + userName + ' I hope you enjoy the site')
