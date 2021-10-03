@@ -85,7 +85,7 @@ for(let i = 4; i >= attempts; i-- ) {
     
     if(numberGuesser === correctAnswer) {
         alert('You are correct.');
-        break;
+        continue;
     } else if (numberGuesser < correctAnswer) {
         alert(`Your guess is too low. You have ${(i - 1 )} attempts remaining.`);
     } else if(numberGuesser > correctAnswer) {
@@ -97,18 +97,20 @@ for(let i = 4; i >= attempts; i-- ) {
         break;
     }
 }
+
 let attemptsRemaining = 6;
 let favPossessions = ['iPhone', 'Sony TV', 'Macbook M1 Air', 'Samsung Oddessy G9', 'LG Soundbar', 'Oculus Quest 2', 'Galaxy Fold 3', 'Marsback M1 Custom Keyboard', 'Alienware M15 R4', '2016 Lexus ES300h'];
-    for(let j = 0; j < 1 ; j-- ) {
+    for(let j = 6; j < favPossessions.length ; j-- ) {
         let question7 = prompt('What is my favorite thing I own');
         let favPossessions = ['iPhone', 'Sony TV', 'Macbook M1 Air', 'Samsung Oddessy G9', 'LG Soundbar', 'Oculus Quest 2', 'Galaxy Fold 3', 'Marsback M1 Custom Keyboard', 'Alienware M15 R4', '2016 Lexus ES300h'];
-        if(question7 === favPossessions[4]) {
-            alert('That is correct! My favorite possessions was ')
+        console.log(favPossessions[j]);
+        if(question7 === favPossessions[j]) {
+            alert(`That is correct! My favorite possessions was ${alert(favPossessions[i])}).`);
             break;
-          } else if (question7 !== favPossessions[4]) {
+          } else if (question7 !== favPossessions[j]) {
               alert(`That is incorrect. try again. You have ${(j - 1)} attempts remaining.`);
           } if((j) === 1) {
-            alert(`That is incorrect, try again. You have ${(j - 1 )} attempts remaining.`)
+            alert(`That is incorrect, The awnser was ${(alert(favPossessions))}`)
             break;
       }
       }
