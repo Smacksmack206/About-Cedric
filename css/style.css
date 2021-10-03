@@ -31,3 +31,19 @@ header {
     border-style: double;
     border-width: 1em;
 }
+
+ol li {
+    list-style-type: number;
+    text-align: center;
+    list-style-position: inside;
+}
+
+ul li {
+    list-style-type: disc;
+    text-align: left;
+    list-style-position: inside;
+}
+
+h2 {
+    text-align: center;
+}
