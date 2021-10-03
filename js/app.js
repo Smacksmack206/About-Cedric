@@ -1,7 +1,7 @@
 'use strict'
 
 
-// function startQuiz() {
+// // function startQuiz() {
     alert("Let's get to know who Cedric the Software Developer");
     let answer = 'yes'
     do{
@@ -76,10 +76,7 @@
        // console.log("You answered correctly!") //
        
     }
-
 let attempts = 1;
-
-
 
 for(let i = 4; i >= attempts; i-- ) {
 
@@ -101,15 +98,37 @@ for(let i = 4; i >= attempts; i-- ) {
     }
 }
 let attemptsRemaining = 6;
-for(let j = 0; j < attemptsRemaining; j++) {
-    let question7 = prompt('What is my favorite thing I own');
-    let z = 6;
-    let favPossessions = ['iPhone', 'Sony TV', 'Macbook M1 Air', 'Samsung Oddessy G9', 'LG Soundbar', 'Oculus Quest 2', 'Galaxy Fold 3', 'Marsback M1 Custom Keyboard', 'Alienware M15 R4', '2016 Lexus ES300h'];
-    if(question7 === favPossessions[j]) {
-        alert(`That is correct! My favorite possessions was ${favPossessions}`);
-        break;
-    } else if(question7 != favPossessions[j]) {
-alert(`That is incorrect, try again. You have ${(j - 1 )} attempts remaining.`)
-    }
-    
-    }
+let favPossessions = ['iPhone', 'Sony TV', 'Macbook M1 Air', 'Samsung Oddessy G9', 'LG Soundbar', 'Oculus Quest 2', 'Galaxy Fold 3', 'Marsback M1 Custom Keyboard', 'Alienware M15 R4', '2016 Lexus ES300h'];
+    for(let j = 0; j < 1 ; j-- ) {
+        let question7 = prompt('What is my favorite thing I own');
+        let favPossessions = ['iPhone', 'Sony TV', 'Macbook M1 Air', 'Samsung Oddessy G9', 'LG Soundbar', 'Oculus Quest 2', 'Galaxy Fold 3', 'Marsback M1 Custom Keyboard', 'Alienware M15 R4', '2016 Lexus ES300h'];
+        if(question7 === favPossessions[4]) {
+            alert('That is correct! My favorite possessions was ')
+            break;
+          } else if (question7 !== favPossessions[4]) {
+              alert(`That is incorrect. try again. You have ${(j - 1)} attempts remaining.`);
+          } if((j) === 1) {
+            alert(`That is incorrect, try again. You have ${(j - 1 )} attempts remaining.`)
+            break;
+      }
+      }
+
+// let attempts = 6;
+
+// for(let i = 6; i <= attempts; i-- ) {
+//       let favPossessions = ['iphone', 'Sony TV', 'Macbook M1 Air', 'Samsung Oddessy G9', 'LG Soundbar', 'Oculus Quest 2', 'Galaxy Fold 3', 'Marsback M1 Custom Keyboard', 'Alienware M15 R4', '2016 Lexus ES300h'];
+//       let question7 = prompt('What is my favorite thing I own').toLocaleLowerCase();
+//       for(let j = 0; j < favPossessions.length; j++ ) {
+//           if(question7 === favPossessions[j]) {
+//             alert(`That is correct! My favorite possessions was ${(favPossessions[j])}`)
+//             break;
+//           } else if (question7 !== favPossessions[j]) {
+//               alert(`That is incorrect. You have ${(j - 1)} attempts remaining.`);
+//           } if((j) === 1) {
+//             alert(`The correct answer was ${(favPossessions[j])} .`)
+//             break;
+//       }
+//       }
+//     }
+
+      
