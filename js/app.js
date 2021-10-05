@@ -1,6 +1,6 @@
 'use strict'
 
-
+let score = 0;
 // // function startQuiz() {
     alert("Let's get to know who Cedric the Software Developer");
     let answer = 'yes'
@@ -14,7 +14,7 @@
     } while(answer.toLowerCase() != 'yes' && answer.toLowerCase() != 'y'){
         alert('Correct! now we can move on to the next question');
         // console.log("You answered correctly!") //
-
+        score++;
     }
 //}
 //function question2() {
@@ -29,7 +29,7 @@
     } while(answer2.toLowerCase() != 'no' && answer2.toLowerCase() != 'n'){
         alert('That is correct!');
         // console.log("You answered correctly!") //
-
+        score++;
     }
 //}
 //function question3() {
@@ -44,7 +44,7 @@
     } while(answer3.toLowerCase() != 'yes' && answer3.toLowerCase() != 'y'){
         alert('That is correct!');
        // console.log("You answered correctly!") //
-
+       score++;
     }
 //}
 //function question4() {
@@ -59,7 +59,7 @@
     } while(answer4.toLowerCase() != 'yes' && answer4.toLowerCase() != 'y'){
         alert('That is correct!');
        // console.log("You answered correctly!") //
-
+       score++;
     }
 //}
 //function question5() {
@@ -74,7 +74,7 @@
     } while(answer5.toLowerCase() != 'yes' && answer5.toLowerCase() != 'y'){
         alert('That is correct!');
        // console.log("You answered correctly!") //
-
+       score++;
     }
 let attempts = 1;
 
@@ -85,7 +85,8 @@ for(let i = 4; i >= attempts; i-- ) {
 
     if(numberGuesser === correctAnswer) {
         alert('You are correct.');
-        continue;
+        score++;
+        break;
     } else if (numberGuesser < correctAnswer) {
         alert(`Your guess is too low. You have ${(i - 1 )} attempts remaining.`);
     } else if(numberGuesser > correctAnswer) {
@@ -110,21 +111,25 @@ while (attemptsRemaining > 0) {
       alert(`That is correct! My favorite possessions was ${favPossessions[z]}.`);
       alert(`Since you answered correctly, This is a list of all of my favorite possessions ${(favPossessions)}`)
       answeredCorrectly = true;
-      
-    }
-    // else if (question7 !== favPossessions[z]) {
+      score++;
+    } 
+  }
+   // else if (question7 !== favPossessions[z]) {
     //     alert(`That is incorrect. try again. You have ${(j - 1)} attempts remaining.`);
     // } 
-  }
   attemptsRemaining--;
   if (answeredCorrectly) {
     attemptsRemaining = 0;
+    alert(`Your score was ${score}`);
     break;
   }
-  if ((attemptsRemaining) === 0) {
-    alert(`That is incorrect, The awnser was ${(favPossessions)}`);
+  if (!answeredCorrectly) {
+    alert(`That is incorrect, try again.`);
 
-    break;
+    
   }
+} if (!answeredCorrectly && attemptsRemaining === 0) {
+        alert(`That is incorrect, The awnser was ${(favPossessions)}`);
+        
 }
 
