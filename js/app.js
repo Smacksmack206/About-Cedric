@@ -15,6 +15,7 @@ let score = 0;
         alert('Correct! now we can move on to the next question');
         // console.log("You answered correctly!") //
         score++;
+        // question2();
     }
 //}
 //function question2() {
@@ -30,6 +31,7 @@ let score = 0;
         alert('That is correct!');
         // console.log("You answered correctly!") //
         score++;
+        // question3();
     }
 //}
 //function question3() {
@@ -45,6 +47,7 @@ let score = 0;
         alert('That is correct!');
        // console.log("You answered correctly!") //
        score++;
+    //    question4();
     }
 //}
 //function question4() {
@@ -60,6 +63,7 @@ let score = 0;
         alert('That is correct!');
        // console.log("You answered correctly!") //
        score++;
+    //    question5();
     }
 //}
 //function question5() {
@@ -75,7 +79,9 @@ let score = 0;
         alert('That is correct!');
        // console.log("You answered correctly!") //
        score++;
+    //    question6();
     }
+//function question6() {
 let attempts = 1;
 
 for(let i = 4; i >= attempts; i-- ) {
@@ -86,6 +92,7 @@ for(let i = 4; i >= attempts; i-- ) {
     if(numberGuesser === correctAnswer) {
         alert('You are correct.');
         score++;
+        //    question7();
         break;
     } else if (numberGuesser < correctAnswer) {
         alert(`Your guess is too low. You have ${(i - 1 )} attempts remaining.`);
@@ -98,6 +105,8 @@ for(let i = 4; i >= attempts; i-- ) {
         break;
     }
 }
+// }
+//function question7() {
 let answeredCorrectly = false;
 let attemptsRemaining = 6;
 let favPossessions = ['iphone', 'sony tv', 'macbook m1 air', 'samsung oddessy g9', 'lg soundbar', 'oculus quest 2', 'galaxy fold 3', 'marsback m1 custom keyboard', 'alienware m15 r4', '2016 Lexus ES300h'];
@@ -114,9 +123,6 @@ while (attemptsRemaining > 0) {
       score++;
     } 
   }
-   // else if (question7 !== favPossessions[z]) {
-    //     alert(`That is incorrect. try again. You have ${(j - 1)} attempts remaining.`);
-    // } 
   attemptsRemaining--;
   if (answeredCorrectly) {
     attemptsRemaining = 0;
@@ -132,4 +138,4 @@ while (attemptsRemaining > 0) {
         alert(`That is incorrect, The awnser was ${(favPossessions)}`);
         
 }
-
+// }
