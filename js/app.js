@@ -14,7 +14,7 @@
     } while(answer.toLowerCase() != 'yes' && answer.toLowerCase() != 'y'){
         alert('Correct! now we can move on to the next question');
         // console.log("You answered correctly!") //
-    
+
     }
 //}
 //function question2() {
@@ -44,7 +44,7 @@
     } while(answer3.toLowerCase() != 'yes' && answer3.toLowerCase() != 'y'){
         alert('That is correct!');
        // console.log("You answered correctly!") //
-        
+
     }
 //}
 //function question4() {
@@ -59,7 +59,7 @@
     } while(answer4.toLowerCase() != 'yes' && answer4.toLowerCase() != 'y'){
         alert('That is correct!');
        // console.log("You answered correctly!") //
-        
+
     }
 //}
 //function question5() {
@@ -74,7 +74,7 @@
     } while(answer5.toLowerCase() != 'yes' && answer5.toLowerCase() != 'y'){
         alert('That is correct!');
        // console.log("You answered correctly!") //
-       
+
     }
 let attempts = 1;
 
@@ -82,7 +82,7 @@ for(let i = 4; i >= attempts; i-- ) {
 
     let correctAnswer = 10;
     let numberGuesser = parseInt(prompt('Guess a number between 1-20'));
-    
+
     if(numberGuesser === correctAnswer) {
         alert('You are correct.');
         continue;
@@ -91,46 +91,40 @@ for(let i = 4; i >= attempts; i-- ) {
     } else if(numberGuesser > correctAnswer) {
         alert(`Your guess is too high. You have ${(i)} attempts remaining.`);
     }  
-    
+
     if((i) === 1) {
         alert(`The correct answer was ${correctAnswer}.`);
         break;
     }
 }
-
+let answeredCorrectly = false;
 let attemptsRemaining = 6;
-let favPossessions = ['iPhone', 'Sony TV', 'Macbook M1 Air', 'Samsung Oddessy G9', 'LG Soundbar', 'Oculus Quest 2', 'Galaxy Fold 3', 'Marsback M1 Custom Keyboard', 'Alienware M15 R4', '2016 Lexus ES300h'];
-    for(let j = 6; j < favPossessions.length ; j-- ) {
-        let question7 = prompt('What is my favorite thing I own');
-        let favPossessions = ['iPhone', 'Sony TV', 'Macbook M1 Air', 'Samsung Oddessy G9', 'LG Soundbar', 'Oculus Quest 2', 'Galaxy Fold 3', 'Marsback M1 Custom Keyboard', 'Alienware M15 R4', '2016 Lexus ES300h'];
-        console.log(favPossessions[j]);
-        if(question7 === favPossessions[j]) {
-            alert(`That is correct! My favorite possessions was ${alert(favPossessions[i])}).`);
-            break;
-          } else if (question7 !== favPossessions[j]) {
-              alert(`That is incorrect. try again. You have ${(j - 1)} attempts remaining.`);
-          } if((j) === 1) {
-            alert(`That is incorrect, The awnser was ${(alert(favPossessions))}`)
-            break;
-      }
-      }
+let favPossessions = ['iphone', 'sony tv', 'macbook m1 air', 'samsung oddessy g9', 'lg soundbar', 'oculus quest 2', 'galaxy fold 3', 'marsback m1 custom keyboard', 'alienware m15 r4', '2016 Lexus ES300h'];
+while (attemptsRemaining > 0) {
+  let question7 = prompt('What is my favorite thing I own');
 
-// let attempts = 6;
-
-// for(let i = 6; i <= attempts; i-- ) {
-//       let favPossessions = ['iphone', 'Sony TV', 'Macbook M1 Air', 'Samsung Oddessy G9', 'LG Soundbar', 'Oculus Quest 2', 'Galaxy Fold 3', 'Marsback M1 Custom Keyboard', 'Alienware M15 R4', '2016 Lexus ES300h'];
-//       let question7 = prompt('What is my favorite thing I own').toLocaleLowerCase();
-//       for(let j = 0; j < favPossessions.length; j++ ) {
-//           if(question7 === favPossessions[j]) {
-//             alert(`That is correct! My favorite possessions was ${(favPossessions[j])}`)
-//             break;
-//           } else if (question7 !== favPossessions[j]) {
-//               alert(`That is incorrect. You have ${(j - 1)} attempts remaining.`);
-//           } if((j) === 1) {
-//             alert(`The correct answer was ${(favPossessions[j])} .`)
-//             break;
-//       }
-//       }
-//     }
-
+  for (let z = 0; z < favPossessions.length; z++) {
+    // let favPossessions = ['iPhone', 'Sony TV', 'Macbook M1 Air', 'Samsung Oddessy G9', 'LG Soundbar', 'Oculus Quest 2', 'Galaxy Fold 3', 'Marsback M1 Custom Keyboard', 'Alienware M15 R4', '2016 Lexus ES300h'];
+    // console.log(favPossessions[z]);
+    if (question7 === favPossessions[z]) {
+      alert(`That is correct! My favorite possessions was ${favPossessions[z]}.`);
+      alert(`Since you answered correctly, This is a list of all of my favorite possessions ${(favPossessions)}`)
+      answeredCorrectly = true;
       
+    }
+    // else if (question7 !== favPossessions[z]) {
+    //     alert(`That is incorrect. try again. You have ${(j - 1)} attempts remaining.`);
+    // } 
+  }
+  attemptsRemaining--;
+  if (answeredCorrectly) {
+    attemptsRemaining = 0;
+    break;
+  }
+  if ((attemptsRemaining) === 0) {
+    alert(`That is incorrect, The awnser was ${(favPossessions)}`);
+
+    break;
+  }
+}
+
