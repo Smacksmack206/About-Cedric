@@ -50,7 +50,7 @@ let score = 0;
     //    question4();
     }
 //}
-//function question4() {
+function question4() {
     let answer4 = 'yes'
     do{
         answer4 = prompt("Was Cedric, sick today during class?");
@@ -65,8 +65,8 @@ let score = 0;
        score++;
     //    question5();
     }
-//}
-//function question5() {
+}
+function question5() {
     let answer5 = 'yes'
     do{
         answer5 = prompt("Is Cedric, a hard worker?");
@@ -81,6 +81,7 @@ let score = 0;
        score++;
     //    question6();
     }
+}
 //function question6() {
 let attempts = 1;
 
