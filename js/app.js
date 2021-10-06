@@ -50,7 +50,7 @@ function question3() {
        question4();
     }
 }
-//function question4() {
+function question4() {
     let answer4 = 'yes'
     do{
         answer4 = prompt("Was Cedric, sick today during class?");
@@ -63,9 +63,9 @@ function question3() {
         alert('That is correct!');
        // console.log("You answered correctly!") //
        score++;
-    //    question5();
+        question5();
     }
-//}
+}
 //function question5() {
     let answer5 = 'yes'
     do{
