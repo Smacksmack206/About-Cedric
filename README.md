@@ -35,3 +35,10 @@ Used resource to remind myself required properties to create a border
 - **Could add additional pages**
 - **Could create nav and link additional pages**
 - **Could add an iframe for one of my favorite youtube videos**
+
+### Contributors  
+Driver: Daniel 
+Navigator: Cedric 
+
+Driver manipulated app.js file by wrapping questions in functions.
+Driver manipulated index.html file by calling first function in the footer. 
