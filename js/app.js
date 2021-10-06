@@ -66,7 +66,7 @@ function question4() {
         question5();
     }
 }
-//function question5() {
+function question5() {
     let answer5 = 'yes'
     do{
         answer5 = prompt("Is Cedric, a hard worker?");
@@ -79,9 +79,9 @@ function question4() {
         alert('That is correct!');
        // console.log("You answered correctly!") //
        score++;
-    //    question6();
+        question6();
     }
-//function question6() {
+function question6() {
 let attempts = 1;
 
 for(let i = 4; i >= attempts; i-- ) {
