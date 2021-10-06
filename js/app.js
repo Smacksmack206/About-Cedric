@@ -81,6 +81,7 @@ function question5() {
        score++;
         question6();
     }
+}
 function question6() {
 let attempts = 1;
 
@@ -92,7 +93,7 @@ for(let i = 4; i >= attempts; i-- ) {
     if(numberGuesser === correctAnswer) {
         alert('You are correct.');
         score++;
-        //    question7();
+            question7();
         break;
     } else if (numberGuesser < correctAnswer) {
         alert(`Your guess is too low. You have ${(i - 1 )} attempts remaining.`);
@@ -105,8 +106,8 @@ for(let i = 4; i >= attempts; i-- ) {
         break;
     }
 }
-// }
-//function question7() {
+ }
+function question7() {
 let answeredCorrectly = false;
 let attemptsRemaining = 6;
 let favPossessions = ['iphone', 'sony tv', 'macbook m1 air', 'samsung oddessy g9', 'lg soundbar', 'oculus quest 2', 'galaxy fold 3', 'marsback m1 custom keyboard', 'alienware m15 r4', '2016 Lexus ES300h'];
@@ -138,4 +139,5 @@ while (attemptsRemaining > 0) {
         alert(`That is incorrect, The awnser was ${(favPossessions)}`);
         
 }
-// }
+ }
+
