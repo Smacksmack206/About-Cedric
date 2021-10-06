@@ -139,5 +139,5 @@ while (attemptsRemaining > 0) {
         alert(`That is incorrect, The awnser was ${(favPossessions)}`);
         
 }
- }
+}
 
