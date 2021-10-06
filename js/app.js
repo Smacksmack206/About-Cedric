@@ -1,7 +1,7 @@
 'use strict'
 
 let score = 0;
-// // function startQuiz() {
+function startQuiz() {
     alert("Let's get to know who Cedric the Software Developer");
     let answer = 'yes'
     do{
@@ -15,10 +15,10 @@ let score = 0;
         alert('Correct! now we can move on to the next question');
         // console.log("You answered correctly!") //
         score++;
-        // question2();
+         question2();
     }
-//}
-//function question2() {
+}
+function question2() {
     let answer2 = 'no'
     do{
         answer2 = prompt("Is the sky blue, during the night?");
@@ -31,10 +31,10 @@ let score = 0;
         alert('That is correct!');
         // console.log("You answered correctly!") //
         score++;
-        // question3();
+        question3();
     }
-//}
-//function question3() {
+}
+function question3() {
     let answer3 = 'yes'
     do{
         answer3 = prompt("Was Cedric, sick yesterday during class?");
@@ -47,10 +47,10 @@ let score = 0;
         alert('That is correct!');
        // console.log("You answered correctly!") //
        score++;
-    //    question4();
+       question4();
     }
-//}
-//function question4() {
+}
+function question4() {
     let answer4 = 'yes'
     do{
         answer4 = prompt("Was Cedric, sick today during class?");
@@ -63,10 +63,10 @@ let score = 0;
         alert('That is correct!');
        // console.log("You answered correctly!") //
        score++;
-    //    question5();
+        question5();
     }
-//}
-//function question5() {
+}
+function question5() {
     let answer5 = 'yes'
     do{
         answer5 = prompt("Is Cedric, a hard worker?");
@@ -79,9 +79,10 @@ let score = 0;
         alert('That is correct!');
        // console.log("You answered correctly!") //
        score++;
-    //    question6();
+        question6();
     }
-//function question6() {
+}
+function question6() {
 let attempts = 1;
 
 for(let i = 4; i >= attempts; i-- ) {
@@ -92,7 +93,7 @@ for(let i = 4; i >= attempts; i-- ) {
     if(numberGuesser === correctAnswer) {
         alert('You are correct.');
         score++;
-        //    question7();
+            question7();
         break;
     } else if (numberGuesser < correctAnswer) {
         alert(`Your guess is too low. You have ${(i - 1 )} attempts remaining.`);
@@ -105,8 +106,8 @@ for(let i = 4; i >= attempts; i-- ) {
         break;
     }
 }
-// }
-//function question7() {
+ }
+function question7() {
 let answeredCorrectly = false;
 let attemptsRemaining = 6;
 let favPossessions = ['iphone', 'sony tv', 'macbook m1 air', 'samsung oddessy g9', 'lg soundbar', 'oculus quest 2', 'galaxy fold 3', 'marsback m1 custom keyboard', 'alienware m15 r4', '2016 Lexus ES300h'];
@@ -138,4 +139,5 @@ while (attemptsRemaining > 0) {
         alert(`That is incorrect, The awnser was ${(favPossessions)}`);
         
 }
-// }
+}
+
