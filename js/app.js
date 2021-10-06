@@ -18,7 +18,7 @@ function startQuiz() {
          question2();
     }
 }
-//function question2() {
+function question2() {
     let answer2 = 'no'
     do{
         answer2 = prompt("Is the sky blue, during the night?");
@@ -31,9 +31,9 @@ function startQuiz() {
         alert('That is correct!');
         // console.log("You answered correctly!") //
         score++;
-        // question3();
+        question3();
     }
-//}
+}
 //function question3() {
     let answer3 = 'yes'
     do{
