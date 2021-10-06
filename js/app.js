@@ -34,7 +34,7 @@ function question2() {
         question3();
     }
 }
-//function question3() {
+function question3() {
     let answer3 = 'yes'
     do{
         answer3 = prompt("Was Cedric, sick yesterday during class?");
@@ -47,9 +47,9 @@ function question2() {
         alert('That is correct!');
        // console.log("You answered correctly!") //
        score++;
-    //    question4();
+       question4();
     }
-//}
+}
 //function question4() {
     let answer4 = 'yes'
     do{
