@@ -1,7 +1,7 @@
 'use strict'
 
 let score = 0;
-// // function startQuiz() {
+function startQuiz() {
     alert("Let's get to know who Cedric the Software Developer");
     let answer = 'yes'
     do{
@@ -15,9 +15,9 @@ let score = 0;
         alert('Correct! now we can move on to the next question');
         // console.log("You answered correctly!") //
         score++;
-        // question2();
+         question2();
     }
-//}
+}
 //function question2() {
     let answer2 = 'no'
     do{
