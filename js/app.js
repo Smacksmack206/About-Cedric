@@ -100,7 +100,6 @@ function question6() {
     } else if(numberGuesser > correctAnswer) {
       alert(`Your guess is too high. You have ${(i)} attempts remaining.`);
     }
-
     if((i) === 1) {
       alert(`The correct answer was ${correctAnswer}.`);
       question7();
