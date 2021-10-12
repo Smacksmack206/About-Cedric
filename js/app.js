@@ -121,12 +121,13 @@ function question7() {
         alert(`Since you answered correctly, This is a list of all of my favorite possessions ${(favPossessions)}`)
         answeredCorrectly = true;
         score++;
+        question8();
       }
     }
     attemptsRemaining--;
     if (answeredCorrectly) {
       attemptsRemaining = 0;
-      alert(`Your score was ${score}`);
+      question8();
       break;
     }
     if (!answeredCorrectly) {
@@ -136,7 +137,12 @@ function question7() {
     }
   } if (!answeredCorrectly && attemptsRemaining === 0) {
     alert(`That is incorrect, The awnser was ${(favPossessions)}`);
-
+    question8();     
   }
 }
-
+function question8() {
+  let userName = prompt('What is your name?');
+  alert('You passed the initial quiz on Cedric - Congrats ' + userName + ' welcome to the site!');
+  alert(`Your score was ${score}`);
+  alert('This is your final message ' + userName + ' I hope you enjoy the site')
+}
